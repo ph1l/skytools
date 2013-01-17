@@ -13,7 +13,7 @@ PG_BUILDEXT = pg_buildext
 include /usr/share/postgresql-common/pgxs_debian_control.mk
 
 config.mak:
-	#./autogen.sh
+	./autogen.sh
 	./configure --prefix=/usr --with-asciidoc --with-sk3-subdir
 
 override_dh_auto_configure: config.mak
